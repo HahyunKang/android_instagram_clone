@@ -14,7 +14,7 @@ import kr.co.softcampus.instagram.databinding.ActivitySearchBinding
 
 class SearchActivity: AppCompatActivity() {
     private lateinit var binding : ActivitySearchBinding
-   var a= "A"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
