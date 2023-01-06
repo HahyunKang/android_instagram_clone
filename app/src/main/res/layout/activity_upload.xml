@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/upload_ll"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_upload_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            android:layout_gravity="center_vertical"
+            android:paddingHorizontal="20dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/new_upload"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+
+        </TextView>
+        <ImageView
+                android:id="@+id/iv_upload_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="?android:attr/textCheckMark"
+                android:layout_margin="10dp">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/upload_iv_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/upload_ll"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/upload_et"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/upload_ll"
+        app:layout_constraintStart_toEndOf="@id/upload_iv_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/transparent"
+        android:hint="@string/input_text"/>
+
+    <View
+        android:id="@+id/upload_border1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/search_bg_gray"
+        app:layout_constraintTop_toBottomOf="@id/upload_et"
+        />
+    <TextView
+        android:id="@+id/tv_tag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/upload_border1"
+        android:text="@string/tag"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+/>
+    <View
+        android:id="@+id/upload_border2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/search_bg_gray"
+        app:layout_constraintTop_toBottomOf="@id/tv_tag"
+        />
+    <TextView
+        android:id="@+id/tv_new_location"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/upload_border2"
+        android:text="@string/new_location"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <View
+        android:id="@+id/upload_border3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/search_bg_gray"
+        app:layout_constraintTop_toBottomOf="@id/tv_new_location"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
