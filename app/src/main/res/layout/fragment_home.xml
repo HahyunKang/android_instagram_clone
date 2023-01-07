@@ -32,12 +32,27 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/home_rv_story"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-      />
-    <androidx.recyclerview.widget.RecyclerView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_rv_story"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <ImageButton
+                    android:id="@+id/button"
+                    android:layout_width="32dp"
+                    android:layout_height="25dp"
+                    android:layout_marginVertical="30dp"
+                    android:layout_marginStart="20dp"
+                    android:scaleType="center"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/home_rv_feed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
